@@ -35,6 +35,7 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="types\" />
     <Folder Include="SnTypings\" />
   </ItemGroup>
   <ItemGroup>
