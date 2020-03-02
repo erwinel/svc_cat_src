@@ -7,6 +7,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ClientScoped", "Client\type
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ServerScoped", "ServerScoped\types\service-now\ServerScoped.njsproj", "{7BF03AA3-2B53-4488-9F4D-3898D8A1E5E3}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ServerGlobal", "ServerGlobal\types\service-now\ServerGlobal.njsproj", "{9641D973-D506-4120-9D9F-DD4B9EC8B346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7BF03AA3-2B53-4488-9F4D-3898D8A1E5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF03AA3-2B53-4488-9F4D-3898D8A1E5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF03AA3-2B53-4488-9F4D-3898D8A1E5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9641D973-D506-4120-9D9F-DD4B9EC8B346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9641D973-D506-4120-9D9F-DD4B9EC8B346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9641D973-D506-4120-9D9F-DD4B9EC8B346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9641D973-D506-4120-9D9F-DD4B9EC8B346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

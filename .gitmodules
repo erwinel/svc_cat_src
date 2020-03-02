@@ -4,3 +4,6 @@
 [submodule "ServerScoped/types/service-now"]
 	path = ServerScoped/types/service-now
 	url = https://github.com/erwinel/sn_typings_server_scoped.git
+[submodule "ServerGlobal/types/service-now"]
+	path = ServerGlobal/types/service-now
+	url = https://github.com/erwinel/sn_typings_server_global.git

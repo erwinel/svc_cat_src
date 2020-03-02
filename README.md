@@ -1,1 +1,3 @@
-# Source Code for USASOC Service Catalog Customizations (x_44813_svc_cat)
+# svc_cat_src
+
+Sources for [USASOC Service Catalog Customizations](https://github.com/erwinel/x_44813_svc_cat.git) development.
