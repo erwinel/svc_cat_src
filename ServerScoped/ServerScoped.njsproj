@@ -36,11 +36,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="types\" />
-    <Folder Include="SnTypings\" />
+    <Folder Include="types\service-now\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="SnTypings\index.d.ts" />
-    <TypeScriptCompile Include="SnTypings\projectManagement.d.ts" />
+    <TypeScriptCompile Include="types\service-now\index.d.ts" />
+    <TypeScriptCompile Include="types\service-now\projectManagement.d.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
