@@ -38,7 +38,7 @@
     <Folder Include="SnTypings\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="SnTypings\base.d.ts" />
+    <TypeScriptCompile Include="SnTypings\index.d.ts" />
     <TypeScriptCompile Include="SnTypings\projectManagement.d.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

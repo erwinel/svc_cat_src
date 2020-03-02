@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SnTypings\" />
+    <Folder Include="SnTypings\ServicePortal\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="SnTypings\base.d.ts" />
@@ -46,6 +47,8 @@
     <TypeScriptCompile Include="SnTypings\js_includes_last_doctype.d.ts" />
     <TypeScriptCompile Include="SnTypings\js_includes_listv2_doctype.d.ts" />
     <TypeScriptCompile Include="SnTypings\js_includes_ui16_form.d.ts" />
+    <TypeScriptCompile Include="SnTypings\ServicePortal\index.d.ts" />
+    <TypeScriptCompile Include="SnTypings\ServicePortal\spUtil.d.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
