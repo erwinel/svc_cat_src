@@ -4,3 +4,9 @@
 [submodule "ServerScoped/SnTypings"]
 	path = ServerScoped/SnTypings
 	url = https://github.com/erwinel/sn_typings_server_scoped.git
+[submodule "Client/types/service-now"]
+	path = Client/types/service-now
+	url = https://github.com/erwinel/sn_typings_client_scoped.git
+[submodule "ServerScoped/types/service-now"]
+	path = ServerScoped/types/service-now
+	url = https://github.com/erwinel/sn_typings_server_scoped.git
