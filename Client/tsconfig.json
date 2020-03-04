@@ -4,13 +4,14 @@
     "module": "none",
     "target": "es6",
     "lib": [ "es6", "DOM" ],
-    "sourceMap": true,
+    "declaration": true,
     "typeRoots": [ "./node_modules/@types", "./types" ]
   },
   "exclude": [
     "node_modules",
     "**/*.spec.ts",
     "**/*.js",
-    "types/service-now/app.*"
+    "./server.*",
+    "types/service-now/server.*"
   ]
 }

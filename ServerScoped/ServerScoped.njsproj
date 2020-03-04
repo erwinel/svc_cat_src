@@ -39,11 +39,16 @@
   <ItemGroup>
     <Folder Include="types\" />
     <Folder Include="types\service-now\" />
+    <Folder Include="types\service-now\x_44813_usasoc_cst\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="types\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\projectManagement.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\index.d.ts" />
+    <TypeScriptCompile Include="UsasocScCatItem.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
