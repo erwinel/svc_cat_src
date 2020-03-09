@@ -39,6 +39,7 @@
     <Folder Include="types\service-now\" />
     <Folder Include="types\service-now\x_44813_phys_net\" />
     <Folder Include="types\service-now\x_44813_sec_clsif\" />
+    <Folder Include="types\service-now\x_44813_usasoc_cst\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="types\index.d.ts" />
@@ -51,6 +52,10 @@
     <TypeScriptCompile Include="types\service-now\ServiceCatalog.d.ts" />
     <TypeScriptCompile Include="types\service-now\x_44813_phys_net\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\x_44813_sec_clsif\index.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\index.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\TaskHelper.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\USASOCCustomizations.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\UsasocUserNotificationManager.d.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

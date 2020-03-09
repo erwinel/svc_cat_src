@@ -37,16 +37,26 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Workflows\" />
     <Folder Include="types\" />
     <Folder Include="types\service-now\" />
     <Folder Include="types\service-now\x_44813_usasoc_cst\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="types\index.d.ts" />
+    <TypeScriptCompile Include="types\service-now\Glide.d.ts" />
     <TypeScriptCompile Include="types\service-now\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\projectManagement.d.ts" />
+    <TypeScriptCompile Include="types\service-now\Rhino.d.ts" />
+    <TypeScriptCompile Include="types\service-now\Tables.d.ts" />
     <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\index.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\TaskHelper.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\USASOCCustomizations.d.ts" />
+    <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\UsasocUserNotificationManager.d.ts" />
     <TypeScriptCompile Include="UsasocScCatItem.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Workflows\USASOC Hardware Item Request.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

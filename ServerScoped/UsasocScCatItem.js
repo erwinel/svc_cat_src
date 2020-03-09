@@ -2,6 +2,8 @@
 /// <reference path="types/service-now/x_44813_usasoc_cst/index.d.ts" />
 var UsasocScCatItem = (function () {
     var UsasocScCatItemConstructor = Class.create();
+    UsasocScCatItemConstructor.PROPERTYNAME_DEFAULT_SC_CAT_APPROVER_GROUP = "x_44813_usasoc_cst.default_sc_cat_approver_group";
+    UsasocScCatItemConstructor.PROPERTYNAME_DEFAULT_SC_CAT_ASSIGNMENT_GROUP = "x_44813_svc_cat.default_sc_cat_assignment_group";
     UsasocScCatItemConstructor.STAGE_WAITING_FOR_APPROVAL = "waiting_for_approval";
     UsasocScCatItemConstructor.STAGE_REQUEST_APPROVED = "request_approved";
     UsasocScCatItemConstructor.STAGE_PROCUREMENT = "procurement";
@@ -9,6 +11,36 @@ var UsasocScCatItem = (function () {
     UsasocScCatItemConstructor.STAGE_FULFILLMENT = "fulfillment";
     UsasocScCatItemConstructor.STAGE_REQUEST_CANCELLED = "canceled";
     UsasocScCatItemConstructor.STAGE_COMPLETE = "complete";
+    UsasocScCatItemConstructor.getDefaultScCatItemApprovalGroupSysId = function () {
+        var result = '' + gs.getProperty(UsasocScCatItem.PROPERTYNAME_DEFAULT_SC_CAT_APPROVER_GROUP, '');
+        if (result.length > 0)
+            return result;
+    };
+    UsasocScCatItemConstructor.getDefaultScCatItemApprovalGroup = function () {
+        var sys_id = UsasocScCatItemConstructor.getDefaultScCatItemApprovalGroupSysId();
+        if (typeof sys_id === 'string') {
+            var gr = new GlideRecord("sys_user_group");
+            gr.addQuery(sys_id);
+            gr.query();
+            if (gr.next())
+                return gr;
+        }
+    };
+    UsasocScCatItemConstructor.getDefaultScCatItemAssignmentGroupSysId = function () {
+        var result = '' + gs.getProperty(UsasocScCatItem.PROPERTYNAME_DEFAULT_SC_CAT_ASSIGNMENT_GROUP, '');
+        if (result.length > 0)
+            return result;
+    };
+    UsasocScCatItemConstructor.getDefaultScCatItemAssignmentGroup = function () {
+        var sys_id = UsasocScCatItemConstructor.getDefaultScCatItemApprovalGroupSysId();
+        if (typeof sys_id === 'string') {
+            var gr = new GlideRecord("sys_user_group");
+            gr.addQuery(sys_id);
+            gr.query();
+            if (gr.next())
+                return gr;
+        }
+    };
     UsasocScCatItemConstructor.isRequest = function (item) {
         return typeof item === 'object' && null != item && item.getTableName() == 'sc_request';
     };
@@ -30,4 +62,3 @@ var UsasocScCatItem = (function () {
     };
     return UsasocScCatItemConstructor;
 })();
-//# sourceMappingURL=UsasocScCatItem.js.map
