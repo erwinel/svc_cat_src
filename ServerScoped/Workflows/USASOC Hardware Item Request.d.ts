@@ -1,4 +1,8 @@
-/// <reference path="../types/service-now/index.d.ts" />
-/// <reference path="../types/service-now/x_44813_usasoc_cst/index.d.ts" />
+/// <reference path="../types/index.d.ts" />
+/// <reference path="../UsasocScCatItem.d.ts" />
+/**
+ * USASOC Hardware Item Request
+ * @namespace usasoc_hardware_item_request
+ */
 declare namespace usasoc_hardware_item_request {
 }

@@ -32,17 +32,43 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="app.ts" />
+    <Content Include="Email Templates\usasoc.req.item.approved.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.backordered.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.canceled.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.completed.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.received.cust.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.received.sd.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Email Templates\usasoc.sc_req_item.rejected.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Business Rules\" />
+    <Folder Include="Email Templates\" />
     <Folder Include="Workflows\" />
     <Folder Include="types\" />
     <Folder Include="types\service-now\" />
     <Folder Include="types\service-now\x_44813_usasoc_cst\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Business Rules\USASOC Req Item Events.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="types\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\Glide.d.ts" />
     <TypeScriptCompile Include="types\service-now\index.d.ts" />
@@ -54,6 +80,9 @@
     <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\USASOCCustomizations.d.ts" />
     <TypeScriptCompile Include="types\service-now\x_44813_usasoc_cst\UsasocUserNotificationManager.d.ts" />
     <TypeScriptCompile Include="UsasocScCatItem.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="UsasocServiceCatalog.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="Workflows\USASOC Hardware Item Request.ts">
