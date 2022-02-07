@@ -1,0 +1,21 @@
+{
+  "name": "ts-to-xml",
+  "version": "0.0.0",
+  "description": "TsToXml",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@ryancavanaugh/xmlbuilder": "0.0.13-alpha",
+    "@types/node": "^8.0.14",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "xmlbuilder": "^15.0.0"
+  }
+}
