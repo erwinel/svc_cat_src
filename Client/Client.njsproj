@@ -39,11 +39,18 @@
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Catalog Client Scripts\" />
     <Folder Include="types\" />
     <Folder Include="types\service-now\" />
     <Folder Include="types\service-now\ServicePortal\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Catalog Client Scripts\Prevent Past Required By.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Catalog Client Scripts\Validate Needed By on change.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="types\index.d.ts" />
     <TypeScriptCompile Include="types\service-now\base.d.ts" />
     <TypeScriptCompile Include="types\service-now\index.d.ts" />
